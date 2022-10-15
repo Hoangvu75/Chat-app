@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="Edit your information"
+        android:textColor="#35a79c"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="5dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username: "
+            android:textSize="15sp" />
+        <EditText
+            android:id="@+id/etUsernameEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:inputType="textCapWords"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="5dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email address: "
+            android:textSize="15sp" />
+        <EditText
+            android:id="@+id/etEmailEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EmailAddress@email.com"
+            android:inputType="textEmailAddress"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="5dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Facebook: "
+            android:textSize="15sp" />
+        <EditText
+            android:id="@+id/etFacebookEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="https://m.facebook.com"
+            android:inputType="textCapWords"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/teal_700"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="5dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Instagram: "
+            android:textSize="15sp" />
+        <EditText
+            android:id="@+id/etInstagramEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="https://m.instagram.com"
+            android:inputType="textCapWords"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/teal_700"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="5dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Tiktok: "
+            android:textSize="15sp" />
+        <EditText
+            android:id="@+id/etTiktokEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="https://m.tiktok.com"
+            android:inputType="textCapWords"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/teal_700"/>
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSaveEdit"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="Save"
+        android:textColor="#35a79c"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:strokeColor="@color/teal_700"
+        app:strokeWidth="3dp" />
+</LinearLayout>
